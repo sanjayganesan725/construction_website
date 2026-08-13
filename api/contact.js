@@ -14,7 +14,7 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    const { name, email, phone, subject, message } = req.body;
+    const { name, email, phone, subject, company, message } = req.body;
 
     // Validation
     if (!name || !name.trim()) {
@@ -40,7 +40,7 @@ module.exports = async function handler(req, res) {
           name: name.trim(),
           email: email.trim(),
           phone: phone ? phone.trim() : null,
-          subject: subject ? subject.trim() : null,
+          subject: subject ? subject.trim() : (company ? `Company: ${company.trim()}` : null),
           message: message.trim(),
         },
       ])

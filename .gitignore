@@ -19,3 +19,9 @@ Thumbs.db
 # Original MD file
 *.md
 !README.md
+
+# Temporary assets & extracted files
+*.zip
+*.jpg.jpeg
+extracted_agon/
+package-lock.json

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>REACH Construction — Building Excellence, Delivering Dreams</title>
-  <meta name="description" content="REACH Construction is a premier construction company specializing in residential, commercial, and industrial projects. Quality craftsmanship and innovative design since 2012." />
-  <meta name="keywords" content="construction, building, contractor, residential, commercial, renovation, interior design" />
+  <title>REACH O — Creative Design & Digital Agency</title>
+  <meta name="description" content="Reach O is a premier creative design and digital agency specializing in branding, digital marketing, web design, and UI/UX development." />
+  <meta name="keywords" content="digital agency, creative design, branding, web design, ui/ux design, logo design, marketing agency" />
 
-  <!-- Google Fonts preconnect -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -17,10 +17,13 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Favicon (gold hardhat emoji as SVG) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗️</text></svg>" />
+  <!-- Favicon -->
+  <link rel="icon" href="logo.jpg" />
 </head>
 <body>
+
+  <!-- ======== PARTICLE BACKGROUND CANVAS ======== -->
+  <canvas id="particle-canvas"></canvas>
 
   <!-- ======== MOBILE OVERLAY ======== -->
   <div class="mobile-overlay" id="mobileOverlay"></div>
@@ -29,17 +32,17 @@
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="#hero" class="navbar-brand">
-        <div class="brand-icon">R</div>
-        REACH<span>.</span>
+        <img src="logo.jpg" alt="REACH O logo" />
+        REACH O
       </a>
 
       <div class="nav-links" id="navLinks">
         <a href="#hero">Home</a>
-        <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#contact" class="nav-cta">Get a Quote</a>
+        <a href="#why-us">About</a>
+        <a href="#portfolio">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-cta">Start Project</a>
       </div>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
@@ -52,106 +55,25 @@
 
   <!-- ======== HERO SECTION ======== -->
   <section class="hero" id="hero">
-    <div class="hero-bg">
-      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80" alt="Construction site at golden hour" loading="eager" />
-    </div>
-
     <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="dot"></span>
-          Trusted Since 2012
-        </div>
+      <div class="hero-badge">EST 2018 • NEW YORK</div>
+      
+      <h1>REACH<br />BEYOND<br /><span class="gradient-text">LIMITS</span></h1>
 
-        <h1>Building <span class="gold">Excellence</span>, Delivering Dreams</h1>
+      <p class="hero-description">
+        We build brands, websites, digital experiences, and powerful marketing solutions that help businesses grow.
+      </p>
 
-        <p class="hero-description">
-          We transform visions into reality with precision engineering, innovative design, 
-          and unwavering commitment to quality. From concept to completion, REACH delivers.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">
-            Start Your Project
-            <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
-          </a>
-          <a href="#projects" class="btn btn-outline">
-            View Our Work
-            <i data-lucide="play" style="width:16px;height:16px;"></i>
-          </a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <div class="number" data-count="150" data-suffix="+">0</div>
-            <div class="text">Projects Completed</div>
-          </div>
-          <div class="hero-stat">
-            <div class="number" data-count="12" data-suffix="+">0</div>
-            <div class="text">Years Experience</div>
-          </div>
-          <div class="hero-stat">
-            <div class="number" data-count="98" data-suffix="%">0</div>
-            <div class="text">Client Satisfaction</div>
-          </div>
-        </div>
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-primary">
+          Explore Services
+          <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline">Start Your Project</a>
       </div>
-    </div>
-  </section>
 
-  <!-- ======== ABOUT SECTION ======== -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image reveal-left">
-          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" alt="Construction team at work" />
-          <div class="experience-badge">
-            <div class="years">12+</div>
-            <div class="text">Years of<br/>Excellence</div>
-          </div>
-        </div>
-
-        <div class="about-content reveal-right">
-          <span class="label">About Us</span>
-          <h2>We Build With Passion & Precision</h2>
-          <p>
-            REACH Construction has been at the forefront of the construction industry 
-            for over a decade. We specialize in delivering high-quality residential, 
-            commercial, and industrial projects that exceed expectations.
-          </p>
-          <p>
-            Our team of skilled engineers, architects, and craftsmen work together 
-            to bring your vision to life — on time, within budget, and to the 
-            highest standards of quality and safety.
-          </p>
-
-          <div class="about-features">
-            <div class="about-feature">
-              <div class="icon">
-                <i data-lucide="shield-check" style="width:20px;height:20px;"></i>
-              </div>
-              <span class="text">Licensed & Insured</span>
-            </div>
-            <div class="about-feature">
-              <div class="icon">
-                <i data-lucide="clock" style="width:20px;height:20px;"></i>
-              </div>
-              <span class="text">On-Time Delivery</span>
-            </div>
-            <div class="about-feature">
-              <div class="icon">
-                <i data-lucide="award" style="width:20px;height:20px;"></i>
-              </div>
-              <span class="text">Award Winning</span>
-            </div>
-            <div class="about-feature">
-              <div class="icon">
-                <i data-lucide="hard-hat" style="width:20px;height:20px;"></i>
-              </div>
-              <span class="text">Safety First</span>
-            </div>
-          </div>
-        </div>
+      <div class="scroll-indicator">
+        SCROLL TO BEGIN
       </div>
     </div>
   </section>
@@ -159,147 +81,377 @@
   <!-- ======== SERVICES SECTION ======== -->
   <section class="services" id="services">
     <div class="container">
-      <div class="section-title reveal">
-        <span class="label">What We Do</span>
-        <h2>Our Construction Services</h2>
-        <p>Comprehensive construction solutions tailored to meet your unique needs and exceed your expectations.</p>
+      <div class="section-title-wrapper reveal">
+        <div>
+          <div class="section-label">What We Offer</div>
+          <h2 class="section-title">Services</h2>
+        </div>
+        <div class="section-desc">
+          Premium digital solutions for visionary brands.
+        </div>
       </div>
 
       <div class="services-grid">
         <!-- Service 1 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <i data-lucide="home" style="width:28px;height:28px;"></i>
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="megaphone" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>Data-driven campaigns that convert audiences into loyal customers.</p>
           </div>
-          <h3>Residential Construction</h3>
-          <p>Custom homes, villas, and apartment complexes built with premium materials and modern design principles.</p>
-          <a href="#contact" class="service-link">Get Started <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
         </div>
 
         <!-- Service 2 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <i data-lucide="building-2" style="width:28px;height:28px;"></i>
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="share-2" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>Social Media Marketing</h3>
+            <p>Strategic engagement that builds active, thriving online communities.</p>
           </div>
-          <h3>Commercial Projects</h3>
-          <p>Office buildings, retail spaces, and commercial complexes designed for functionality and aesthetic appeal.</p>
-          <a href="#contact" class="service-link">Get Started <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
         </div>
 
         <!-- Service 3 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <i data-lucide="hammer" style="width:28px;height:28px;"></i>
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="pen-tool" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>Logo Design</h3>
+            <p>Timeless brand marks designed with deep strategic meaning.</p>
           </div>
-          <h3>Renovation & Remodeling</h3>
-          <p>Transform existing spaces with our expert renovation services — from kitchens and bathrooms to complete overhauls.</p>
-          <a href="#contact" class="service-link">Get Started <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
         </div>
 
         <!-- Service 4 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <i data-lucide="palette" style="width:28px;height:28px;"></i>
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="palette" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>Brand Identity</h3>
+            <p>Complete visual ecosystems that tell a cohesive brand story.</p>
           </div>
-          <h3>Interior Design</h3>
-          <p>Stunning interior spaces that blend form and function, curated by our expert design team for lasting impact.</p>
-          <a href="#contact" class="service-link">Get Started <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
         </div>
 
         <!-- Service 5 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <i data-lucide="clipboard-list" style="width:28px;height:28px;"></i>
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="layout" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>Web Design</h3>
+            <p>Stunning, highly polished digital layouts that convert visitors.</p>
           </div>
-          <h3>Project Management</h3>
-          <p>End-to-end project management ensuring deadlines, budgets, and quality standards are consistently met.</p>
-          <a href="#contact" class="service-link">Get Started <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
         </div>
 
         <!-- Service 6 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <i data-lucide="lightbulb" style="width:28px;height:28px;"></i>
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="smartphone" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Intuitive user paths and seamless experiences across all touchpoints.</p>
           </div>
-          <h3>Consulting Services</h3>
-          <p>Expert construction consulting to help you make informed decisions about materials, design, and execution.</p>
-          <a href="#contact" class="service-link">Get Started <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="video" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>Video Editing</h3>
+            <p>Cinematic storytelling that communicates message and value.</p>
+          </div>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="camera" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>Photo Editing</h3>
+            <p>Visual correction and pixel-level refinement for maximum clarity.</p>
+          </div>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="code" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>Full Stack Development</h3>
+            <p>Robust and highly scalable custom platforms built with clean code.</p>
+          </div>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
+        </div>
+
+        <!-- Service 10 -->
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="search" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>SEO Optimization</h3>
+            <p>Strategic index optimization that drives consistent search traffic.</p>
+          </div>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
+        </div>
+
+        <!-- Service 11 -->
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="cpu" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>AI Automation</h3>
+            <p>Custom workflows and automation pipelines powered by AI agents.</p>
+          </div>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
+        </div>
+
+        <!-- Service 12 -->
+        <div class="service-card glass tilt-card reveal">
+          <div>
+            <div class="icon-box">
+              <i data-lucide="file-text" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>Content Strategy</h3>
+            <p>Compelling visual and textual narratives that resonate with customers.</p>
+          </div>
+          <a href="#contact" class="more-btn">LEARN MORE <span>→</span></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ======== PROJECTS SECTION ======== -->
-  <section class="projects" id="projects">
+  <!-- ======== WHY REACH O SECTION ======== -->
+  <section class="why-us" id="why-us">
     <div class="container">
-      <div class="section-title reveal">
-        <span class="label">Our Portfolio</span>
-        <h2>Featured Projects</h2>
-        <p>Explore our portfolio of completed projects spanning residential, commercial, and industrial sectors.</p>
+      <div class="section-title-wrapper reveal" style="justify-content: center; margin-bottom: 80px;">
+        <div style="text-align: center;">
+          <div class="section-label">The Difference</div>
+          <h2 class="section-title">Why Reach O</h2>
+        </div>
       </div>
 
-      <!-- Filter Buttons -->
-      <div class="project-filters reveal">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="residential">Residential</button>
-        <button class="filter-btn" data-filter="commercial">Commercial</button>
-        <button class="filter-btn" data-filter="renovation">Renovation</button>
-        <button class="filter-btn" data-filter="industrial">Industrial</button>
+      <!-- Stats Grid -->
+      <div class="stats-grid reveal">
+        <div class="stat-item">
+          <div class="stat-number" data-count="7" data-suffix="">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="184" data-suffix="">0</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="97" data-suffix="">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="99" data-suffix="%">0</div>
+          <div class="stat-label">Success Rate</div>
+        </div>
       </div>
 
-      <!-- Projects Grid -->
-      <div class="projects-grid">
-        <div class="project-card reveal" data-category="residential">
-          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" alt="Modern luxury villa" />
-          <div class="project-overlay">
-            <span class="category">Residential</span>
-            <h3>Modern Luxury Villa</h3>
-            <p>4,500 sq ft custom home with smart features</p>
+      <!-- Reasons Grid -->
+      <div class="reasons-grid">
+        <!-- Reason 1 -->
+        <div class="reason-card glass reveal">
+          <div class="num">01</div>
+          <h3>Strategic Depth</h3>
+          <p>We don't just design — we architect brand success through deep user research, target insight, and thorough market positioning.</p>
+        </div>
+
+        <!-- Reason 2 -->
+        <div class="reason-card glass reveal">
+          <div class="num">02</div>
+          <h3>Technical Excellence</h3>
+          <p>World-class custom engineering paired with breathtaking creative execution. Fast, robust, responsive, and secure layouts.</p>
+        </div>
+
+        <!-- Reason 3 -->
+        <div class="reason-card glass reveal">
+          <div class="num">03</div>
+          <h3>End-to-End Partnership</h3>
+          <p>From initial brainstorming sessions and brand identity building, to complete deployment and post-launch maintenance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PORTFOLIO SECTION ======== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-title-wrapper reveal">
+        <div>
+          <div class="section-label">Selected Work</div>
+          <h2 class="section-title">Portfolio</h2>
+        </div>
+        <div class="section-desc" style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 2px;">
+          SCROLL TO EXPLORE
+        </div>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-card tilt-card reveal" 
+             data-title="Aether" 
+             data-client="AETHER LABS" 
+             data-category="Brand & Digital" 
+             data-desc="Complete brand overhaul and immersive digital experience for a climate tech pioneer. We designed a modern visual identity system, custom website patterns, and corporate content presentation structures to position Aether Labs as the premium choice in sustainable research.">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Aether Project Portfolio" />
+          <div class="overlay"></div>
+          <div class="content">
+            <span class="category">Brand & Digital</span>
+            <h3>Aether</h3>
+            <div class="client">AETHER LABS</div>
+          </div>
+          <div class="case-btn">VIEW CASE</div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-card tilt-card reveal" 
+             data-title="Vesper" 
+             data-client="VESPER FINANCE" 
+             data-category="Web & Product" 
+             data-desc="Next-generation fintech platform with elegant UI and powerful trading tools. Built with absolute focus on visual clarity, simplified dashboards, and sleek animations that elevate complex investment metrics into intuitive actions.">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Vesper Project Portfolio" />
+          <div class="overlay"></div>
+          <div class="content">
+            <span class="category">Web & Product</span>
+            <h3>Vesper</h3>
+            <div class="client">VESPER FINANCE</div>
+          </div>
+          <div class="case-btn">VIEW CASE</div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-card tilt-card reveal" 
+             data-title="Nexus" 
+             data-client="NEXUS COLLECTIVE" 
+             data-category="Identity & Web" 
+             data-desc="Modern creative collective brand system and membership portal. Created a bold, striking geometric icon system, custom web graphics, and a highly responsive community platform layout optimized for premium creator engagement.">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Nexus Project Portfolio" />
+          <div class="overlay"></div>
+          <div class="content">
+            <span class="category">Identity & Web</span>
+            <h3>Nexus</h3>
+            <div class="client">NEXUS COLLECTIVE</div>
+          </div>
+          <div class="case-btn">VIEW CASE</div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-card tilt-card reveal" 
+             data-title="Lumina" 
+             data-client="LUMINA AI" 
+             data-category="3D & Motion" 
+             data-desc="Stunning 3D product showcase and interactive AI interface. Implemented advanced custom UI assets, glowing gradient layouts, and premium animation frames to present next-generation machine learning modules in a tactile, understandable form.">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Lumina Project Portfolio" />
+          <div class="overlay"></div>
+          <div class="content">
+            <span class="category">3D & Motion</span>
+            <h3>Lumina</h3>
+            <div class="client">LUMINA AI</div>
+          </div>
+          <div class="case-btn">VIEW CASE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CASE STUDY MODAL ======== -->
+  <div class="modal-overlay" id="portfolioModal">
+    <div class="modal-content glass">
+      <button class="modal-close" id="modalClose">CLOSE PREVIEW</button>
+      <div class="category">Brand & Digital</div>
+      <h2>Aether</h2>
+      <div class="client">AETHER LABS</div>
+      <p class="desc">Complete brand overhaul and immersive digital experience for a climate tech pioneer.</p>
+      <div class="modal-actions">
+        <a href="#contact" class="btn btn-primary" onclick="document.getElementById('portfolioModal').classList.remove('active'); document.body.style.overflow = '';">START A SIMILAR PROJECT</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== PROCESS SECTION ======== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-title-wrapper reveal" style="justify-content: center;">
+        <div style="text-align: center;">
+          <div class="section-label">How We Work</div>
+          <h2 class="section-title">Our Process</h2>
+        </div>
+      </div>
+
+      <div class="process-timeline reveal">
+        <!-- Step 1 -->
+        <div class="process-step">
+          <div class="num-box">01</div>
+          <div>
+            <h3>Discovery</h3>
+            <p>Deep-dive creative workshops to understand your brand vision, target audience segments, and long-term business goals.</p>
           </div>
         </div>
 
-        <div class="project-card reveal" data-category="commercial">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Corporate office tower" />
-          <div class="project-overlay">
-            <span class="category">Commercial</span>
-            <h3>Corporate Office Tower</h3>
-            <p>20-story glass & steel commercial complex</p>
+        <!-- Step 2 -->
+        <div class="process-step">
+          <div class="num-box">02</div>
+          <div>
+            <h3>Planning</h3>
+            <p>Strategic roadmaps, full technical requirements, product definition, and complete visual identity direction.</p>
           </div>
         </div>
 
-        <div class="project-card reveal" data-category="renovation">
-          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Interior renovation" />
-          <div class="project-overlay">
-            <span class="category">Renovation</span>
-            <h3>Luxury Interior Makeover</h3>
-            <p>Complete penthouse renovation & redesign</p>
+        <!-- Step 3 -->
+        <div class="process-step">
+          <div class="num-box">03</div>
+          <div>
+            <h3>Design</h3>
+            <p>Immersive visual systems, modern typography choices, and highly interactive interface blueprints.</p>
           </div>
         </div>
 
-        <div class="project-card reveal" data-category="residential">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Contemporary residence" />
-          <div class="project-overlay">
-            <span class="category">Residential</span>
-            <h3>Contemporary Residence</h3>
-            <p>Eco-friendly smart home with solar integration</p>
+        <!-- Step 4 -->
+        <div class="process-step">
+          <div class="num-box">04</div>
+          <div>
+            <h3>Development</h3>
+            <p>Robust full-stack development, lightweight static pages, fluid scroll transitions, and pixel-perfect responsiveness.</p>
           </div>
         </div>
 
-        <div class="project-card reveal" data-category="industrial">
-          <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=600&q=80" alt="Industrial warehouse" />
-          <div class="project-overlay">
-            <span class="category">Industrial</span>
-            <h3>Industrial Warehouse</h3>
-            <p>50,000 sq ft logistics & distribution center</p>
+        <!-- Step 5 -->
+        <div class="process-step">
+          <div class="num-box">05</div>
+          <div>
+            <h3>Launch</h3>
+            <p>Meticulous cross-browser quality assurance testing, environment deployment settings, and live launch support.</p>
           </div>
         </div>
 
-        <div class="project-card reveal" data-category="commercial">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Modern retail space" />
-          <div class="project-overlay">
-            <span class="category">Commercial</span>
-            <h3>Premium Retail Complex</h3>
-            <p>Mixed-use retail & dining destination</p>
+        <!-- Step 6 -->
+        <div class="process-step">
+          <div class="num-box">06</div>
+          <div>
+            <h3>Support</h3>
+            <p>Ongoing search optimization, conversion tracking metrics, design assets expansion, and active partnership.</p>
           </div>
         </div>
       </div>
@@ -309,66 +461,56 @@
   <!-- ======== TESTIMONIALS SECTION ======== -->
   <section class="testimonials" id="testimonials">
     <div class="container">
-      <div class="section-title reveal">
-        <span class="label">Client Reviews</span>
-        <h2>What Our Clients Say</h2>
-        <p>Don't just take our word for it — hear from the people who trusted us to build their dreams.</p>
+      <div class="section-title-wrapper reveal" style="justify-content: center; margin-bottom: 80px;">
+        <div style="text-align: center;">
+          <div class="section-label">Trusted By Visionaries</div>
+          <h2 class="section-title">What Clients Say</h2>
+        </div>
       </div>
 
-      <div class="testimonials-grid">
+      <div class="testimonial-container reveal">
         <!-- Testimonial 1 -->
-        <div class="testimonial-card reveal">
-          <div class="quote-icon">"</div>
-          <div class="stars">★★★★★</div>
-          <p class="review">
-            REACH Construction delivered our dream home on time and within budget. 
-            The attention to detail and craftsmanship is truly world-class. 
-            Couldn't be happier with the result!
-          </p>
-          <div class="testimonial-author">
-            <div class="avatar">RK</div>
-            <div>
-              <div class="name">Rajesh Kumar</div>
-              <div class="role">Homeowner, Chennai</div>
-            </div>
+        <div class="testimonial-card glass">
+          <p>"Reach O completely transformed our digital presence. The level of craft and strategic thinking is unmatched."</p>
+          <div>
+            <div class="author">Elena Voss</div>
+            <div class="role">CEO, Aether Labs</div>
           </div>
         </div>
 
         <!-- Testimonial 2 -->
-        <div class="testimonial-card reveal">
-          <div class="quote-icon">"</div>
-          <div class="stars">★★★★★</div>
-          <p class="review">
-            Professional team, transparent communication, and exceptional quality. 
-            They managed our office complex project flawlessly. Highly recommended 
-            for any commercial construction need.
-          </p>
-          <div class="testimonial-author">
-            <div class="avatar">PS</div>
-            <div>
-              <div class="name">Priya Sharma</div>
-              <div class="role">CEO, TechSpace Inc.</div>
-            </div>
+        <div class="testimonial-card glass">
+          <p>"Working with them felt like having an elite internal team. The results speak for themselves."</p>
+          <div>
+            <div class="author">Marcus Chen</div>
+            <div class="role">Founder, Vesper Finance</div>
           </div>
         </div>
 
         <!-- Testimonial 3 -->
-        <div class="testimonial-card reveal">
-          <div class="quote-icon">"</div>
-          <div class="stars">★★★★★</div>
-          <p class="review">
-            The renovation of our heritage home was handled with incredible care 
-            and expertise. REACH preserved the character while adding all modern 
-            amenities. Truly masterful work!
-          </p>
-          <div class="testimonial-author">
-            <div class="avatar">AM</div>
-            <div>
-              <div class="name">Arun Murugan</div>
-              <div class="role">Property Developer</div>
-            </div>
+        <div class="testimonial-card glass">
+          <p>"Their ability to translate complex ideas into beautiful, intuitive experiences is truly world-class."</p>
+          <div>
+            <div class="author">Priya Sharma</div>
+            <div class="role">Creative Director, Lumina</div>
           </div>
         </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card glass">
+          <p>"They elevated our brand beyond anything we imagined. The entire experience was seamless."</p>
+          <div>
+            <div class="author">David Laurent</div>
+            <div class="role">Head of Product, Nexus</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-dots">
+        <span class="active" data-idx="0" style="width:32px;"></span>
+        <span data-idx="1" style="width:16px;"></span>
+        <span data-idx="2" style="width:16px;"></span>
+        <span data-idx="3" style="width:16px;"></span>
       </div>
     </div>
   </section>
@@ -376,183 +518,68 @@
   <!-- ======== CONTACT SECTION ======== -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="section-title reveal">
-        <span class="label">Get In Touch</span>
-        <h2>Let's Build Together</h2>
-        <p>Ready to start your project? Reach out to us and let's discuss how we can bring your vision to life.</p>
-      </div>
-
       <div class="contact-grid">
-        <!-- Contact Info -->
-        <div class="contact-info reveal-left">
-          <h3>Contact Information</h3>
-          <p>Have a question or want a free quote? We'd love to hear from you. Our team responds within 24 hours.</p>
+        <div class="reveal">
+          <div class="section-label">LET'S BUILD SOMETHING EXCEPTIONAL</div>
+          <h2>Start Your<br />Project.</h2>
 
-          <div class="contact-details">
-            <div class="contact-item">
-              <div class="icon">
-                <i data-lucide="map-pin" style="width:22px;height:22px;"></i>
-              </div>
-              <div class="details">
-                <div class="label">Our Office</div>
-                <div class="value">123 Builder's Avenue, Anna Nagar<br/>Chennai, Tamil Nadu 600040</div>
-              </div>
+          <form class="contact-form" id="contactForm">
+            <div class="input-row">
+              <input type="text" id="name" name="name" placeholder="Full Name *" required />
+              <input type="email" id="email" name="email" placeholder="Work Email *" required />
             </div>
-
-            <div class="contact-item">
-              <div class="icon">
-                <i data-lucide="phone" style="width:22px;height:22px;"></i>
-              </div>
-              <div class="details">
-                <div class="label">Call Us</div>
-                <div class="value">+91 98765 43210</div>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="icon">
-                <i data-lucide="mail" style="width:22px;height:22px;"></i>
-              </div>
-              <div class="details">
-                <div class="label">Email Us</div>
-                <div class="value">info@reachconstruction.com</div>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="icon">
-                <i data-lucide="clock" style="width:22px;height:22px;"></i>
-              </div>
-              <div class="details">
-                <div class="label">Working Hours</div>
-                <div class="value">Mon — Sat: 9:00 AM – 6:00 PM</div>
-              </div>
-            </div>
-          </div>
+            <input type="text" id="company" name="company" placeholder="Company" />
+            <textarea id="message" name="message" placeholder="Tell us about your project *" required></textarea>
+            
+            <button type="submit" class="btn btn-primary btn-submit">SEND INQUIRY</button>
+          </form>
         </div>
 
-        <!-- Contact Form -->
-        <div class="contact-form-wrapper reveal-right">
-          <form class="contact-form" id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required />
-              </div>
+        <div class="reveal">
+          <!-- Glass Visual Box -->
+          <div class="contact-visual-card glass" style="border: 1px solid var(--border-subtle); display:flex; flex-direction:column; padding: 40px; justify-content: center; gap: 20px;">
+            <div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight:600; letter-spacing:-1px;">
+              Ready to<br />Reach O?
             </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
-              </div>
-              <div class="form-group">
-                <label for="subject">Service Needed</label>
-                <select id="subject" name="subject">
-                  <option value="" disabled selected>Select a service</option>
-                  <option value="Residential Construction">Residential Construction</option>
-                  <option value="Commercial Construction">Commercial Construction</option>
-                  <option value="Renovation & Remodeling">Renovation & Remodeling</option>
-                  <option value="Interior Design">Interior Design</option>
-                  <option value="Project Management">Project Management</option>
-                  <option value="Consulting">Consulting</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
+            <div style="font-size:0.95rem; color:var(--text-secondary); line-height: 1.5;">
+              Let's craft your next digital solution together. We answer all project inquiries in detail within 24 business hours.
             </div>
+          </div>
 
-            <div class="form-group">
-              <label for="message">Your Message *</label>
-              <textarea id="message" name="message" placeholder="Tell us about your project — location, size, timeline, budget..." rows="5" required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-submit">
-              Send Message
-              <i data-lucide="send" style="width:16px;height:16px;"></i>
-            </button>
-          </form>
+          <div class="contact-info-text">
+            Reach O Studio<br />
+            New York • London • Singapore<br /><br />
+            Inquiries: <a href="mailto:studio@reacho.co">studio@reacho.co</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ======== FOOTER ======== -->
-  <footer class="footer" id="footer">
+  <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <!-- Brand -->
-        <div class="footer-brand">
-          <a href="#hero" class="navbar-brand">
-            <div class="brand-icon">R</div>
-            REACH<span>.</span>
-          </a>
-          <p>Building excellence and delivering dreams since 2012. Your trusted partner for residential, commercial, and industrial construction.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-            <a href="#" aria-label="Instagram">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-            </a>
-            <a href="#" aria-label="Twitter / X">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="footer-column">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Services -->
-        <div class="footer-column">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#services">Residential</a></li>
-            <li><a href="#services">Commercial</a></li>
-            <li><a href="#services">Renovation</a></li>
-            <li><a href="#services">Interior Design</a></li>
-            <li><a href="#services">Consulting</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="footer-column">
-          <h4>Contact</h4>
-          <ul>
-            <li>123 Builder's Avenue</li>
-            <li>Anna Nagar, Chennai</li>
-            <li>Tamil Nadu 600040</li>
-            <li style="margin-top:8px;"><a href="tel:+919876543210">+91 98765 43210</a></li>
-            <li><a href="mailto:info@reachconstruction.com">info@reachconstruction.com</a></li>
-          </ul>
-        </div>
+      <div class="footer-copy">
+        &copy; 2026 REACH O. All rights reserved.
       </div>
-
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <p>&copy; 2024 REACH Construction. All rights reserved.</p>
-        <p>Designed with <span style="color: var(--gold-primary);">♥</span> | Built for Excellence</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
       </div>
     </div>
   </footer>
 
-  <!-- JavaScript -->
+  <!-- Main JS -->
   <script src="js/main.js"></script>
 
   <!-- Initialize Lucide Icons -->
