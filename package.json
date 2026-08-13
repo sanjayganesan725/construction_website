@@ -1,0 +1,8 @@
+{
+  "name": "reach-construction-website",
+  "version": "1.0.0",
+  "description": "REACH Construction Company Website",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  }
+}
