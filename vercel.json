@@ -20,5 +20,11 @@
         { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
       ]
     }
+  ],
+  "crons": [
+    {
+      "path": "/api/db-wake",
+      "schedule": "0 */12 * * *"
+    }
   ]
 }
